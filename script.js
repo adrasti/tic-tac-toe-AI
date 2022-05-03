@@ -1,4 +1,4 @@
-//(function game() {
+(function game() {
     let playerX = [];
     let playerO = [];
 
@@ -201,16 +201,29 @@
         }
     }
     function alertWin(message){
-        let winscreen = document.getElementById('alert');
+        let winscreen = document.querySelector('#alert');
         winscreen.style.display = "flex";
         document.getElementById('message').innerText = message;
-        document.getElementById('ok').addEventListener('click', () => {
-            winscreen.style.display = "none";
-            reset();
-            makeComputerMove();
-        });
+        document.addEventListener('keydown', a)
+        document.getElementById('ok').addEventListener('click', a);
+        function a(e){
+            console.log(e)
+            if(e.type == "keydown"){
+                if(e.key == 'Enter'){
+                    winscreen.style.display = "none";
+                    reset();
+                    makeComputerMove();
+                    document.removeEventListener('keydown', a)
+                }
+            } else {
+                winscreen.style.display = "none";
+                    reset();
+                    makeComputerMove();
+                    document.removeEventListener('keydown', a);
+            }
+        }
     }
-//})()
+})()
 
 
 
