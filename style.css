@@ -156,7 +156,14 @@ main {
   content: url(./assets/human.svg);
 }
 
+.human {
+  border: solid lightgreen 1px;
+  background: rgba(92, 245, 168, 0.583);
+}
+
 .comp {
+  border: solid lightblue 1px;
+  background-color: rgba(152, 230, 230, 0.585);
   padding-right: 1.7rem;
 }
 
