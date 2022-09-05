@@ -1,62 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script> 
-    <link rel = "stylesheet" href = "./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
     <title>Tic-Tac-Toe</title>
-</head>
-<body>
-    <main>
-        <div id = "grid" class = "X">
-            <div class = "tile"></div>
-            <div class = "tile"></div>
-            <div class = "tile"></div>
-            <div class = "tile"></div>
-            <div class = "tile"></div>
-            <div class = "tile"></div>
-            <div class = "tile"></div>
-            <div class = "tile"></div>
-            <div class = "tile"></div>
+  </head>
+  <body>
+    <div class="main-page">
+      <header>Tic-tac-toe</header>
+      <main>
+        <div class="players">
+          <div id="playerX">
+            <div class="name">Player 1 (X)</div>
+            <button class="human">Human</button>
+            <span id="buttons1">
+              <div class="best">
+                <input id="b1" type="radio" name="X" value="Best" checked />
+                <label for="b1">Best</label>
+              </div>
+              <div class="random">
+                <input id="r1" type="radio" name="X" value="Random" />
+                <label for="r1">Random</label>
+              </div>
+            </span>
+          </div>
+          <p class="vs">vs.</p>
+          <div id="playerO">
+            <div class="name">Player 2 (O)</div>
+            <button class="human">Human</button>
+            <span id="buttons2">
+              <div class="best">
+                <input id="b2" type="radio" name="O" value="Best" checked />
+                <label for="b2">Best</label>
+              </div>
+              <div class="random">
+                <input id="r2" type="radio" name="O" value="Random" />
+                <label for="r2">Random</label>
+              </div>
+            </span>
+          </div>
         </div>
-    </main>
-    <div id = "playerX">
-        <div class = "name">
-            "X" player:
+        <div id="grid" class="X">
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
+          <div class="tile"></div>
         </div>
-        <div class = "human"></div>
-        <div id = "buttons1">
-            <div class = "best">
-                <input id="b1" type="radio" name="X" value="Best" checked>
-                <label for="b1">Best moves</label>
-            </div>
-            <div class = "random">
-                <input id="r1" type="radio" name="X" value="Random">
-                <label for="r1">Random moves</label>
-            </div>
-        </div>
+      </main>
     </div>
-    <div id = "playerO">
-        <div class = "name">
-            "O" player:
-        </div>
-        <div class = "human"></div>
-        <div id = "buttons2">
-            <div class = "best">
-                <input id="b2" type="radio" name="O" value="Best" checked>
-                <label for="b2">Best moves</label>
-            </div>
-            <div class = "random">
-                <input id="r2" type="radio" name="O" value="Random">
-                <label for="r2">Random moves</label>
-            </div>
-        </div>
+    <div id="alert">
+      <div id="message"></div>
+      <button id="ok" type="button">OK</button>
     </div>
-    <div id = "alert">
-        <div id = "message"></div>
-        <button id = "ok" type = "button">OK</button>
-    </div>
-</body>
+  </body>
 </html>
