@@ -121,6 +121,7 @@ main {
   justify-content: center;
   flex-direction: column;
   font-size: 5rem;
+  text-align: center;
 }
 .vs {
   font-size: 1.2rem;
@@ -308,4 +309,10 @@ label {
 
 #ok:hover {
   background-color: rgb(255, 115, 0);
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
 }
