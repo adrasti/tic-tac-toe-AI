@@ -315,4 +315,9 @@ label {
   :root {
     font-size: 14px;
   }
+  #grid {
+    grid-template-columns: repeat(3, 6.5rem);
+    grid-template-rows: repeat(3, 6.5rem);
+    gap: 0.6rem;
+  }
 }
